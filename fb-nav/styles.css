@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 98%;
+  margin: auto;
+  padding: 8px 0;
+}
+
+.active svg,
+a:hover {
+  fill: blue;
+}
+
+.search {
+  width: 75%;
+  height: 40px;
+  background-color: rgb(240, 242, 245);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 3rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.bg-gray {
+  background-color: #e4e6eb;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.search-input {
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  color: rgb(120, 123, 123);
+  background-color: transparent;
+  display: none;
+  border: none;
+  outline: none;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.desktop {
+  display: none;
+}
+
+#mobile,
+#menu,
+#game,
+#more,
+#add {
+  display: none;
+}
+
+.mb-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+
+.mb-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: blue;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  #mobile {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #mid-nav {
+    width: 40%;
+  }
+  #right-nav {
+    width: 27%;
+  }
+  #menu,
+  #add {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  svg {
+    width: 25px;
+  }
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search-input {
+    display: inline-flex;
+  }
+  #mid-nav {
+    width: 45%;
+  }
+  #right-nav {
+    width: 15%;
+  }
+  #game,
+  #more {
+    display: inline-block;
+  }
+}
