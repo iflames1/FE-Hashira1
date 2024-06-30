@@ -13,6 +13,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 p,
@@ -69,6 +73,9 @@ nav a {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  background-color: white;
+  background-position-x: center;
+  background-position: center;
 }
 
 .about-content {
@@ -90,6 +97,7 @@ nav {
   padding: 40px 15px 0 15px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 nav a {
